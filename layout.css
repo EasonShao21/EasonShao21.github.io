@@ -34,6 +34,10 @@ p {
     color: #323232;
 }
 
+.green {
+    color: #78cc6d;
+}
+
 .topBorder {
     border-top: 1px solid transparent;
     border-image: linear-gradient(to right, #00000000 0%, #dddddd 50%,  #00000000 100%);
@@ -305,6 +309,18 @@ p {
     margin-bottom: 40px;
 }
 
+.card-inner .name {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card-inner .name-2 {
+    color: #999999;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
 .about-card .d-flex .w50-box ul li {
     padding: 15px 0;
     width: 100%;
@@ -369,12 +385,14 @@ p {
     padding-bottom:5px;
 }
 
-.Es-pic {
+.Es-pic ,
+.Es-work{
     width: 100%;
     position: relative;
 }
 
-.Es-pic .mask {
+.Es-pic .mask ,
+.Es-work .mask{
     position: absolute;
     left: 0;
     top: 0;
@@ -388,7 +406,8 @@ p {
     cursor: pointer;
 }
 
-.Es-pic .mask .far {
+.Es-pic .mask i ,
+.Es-work .mask i{
     position: relative;
 	top: 50%;
     transform: translateY(-50%);
@@ -396,11 +415,17 @@ p {
     color: #fff;
 }
 
-.Es-pic .mask:hover {
+.Es-pic .mask:hover ,
+.Es-work .mask:hover{
     opacity: 0.9;
 }
 
-.Es-pic img {
+.Es-work .Es-work + .name {
+    color: #78cc6d;
+}
+
+.Es-pic img ,
+.Es-work img{
     max-width: 100%;
     max-height: 100%;
 }
@@ -451,21 +476,8 @@ p {
     border-radius: 4px;
 }
 
-.card-inner .d-flex .content-box .name {
-    font-size: 17px;
-    font-weight: bold;
-    margin: 10px 0;
-}
-
 .card-inner .d-flex .content-box .name:first-child {
     margin-top: 0;
-}
-
-
-.card-inner .d-flex .content-box .company {
-    color: #999999;
-    font-size: 14px;
-    margin-bottom: 15px;
 }
 
 .card-inner .d-flex .content-box .progress {
@@ -488,12 +500,6 @@ p {
       }
   }
 
-.card-inner .d-flex .content-box .codeName {
-    font-size: 17px;
-    font-weight: bold;
-    margin: 0;
-}
-
 .card-inner .d-flex .content-box span {
     display: inline-block;
     width: 14px;
@@ -504,6 +510,9 @@ p {
     margin-right: 5px;
   }
 
-  .card-inner .d-flex .content-box .gray {
+.card-inner .d-flex .content-box .gray {
       background: #eee;
   }
+
+
+.card-inner 
