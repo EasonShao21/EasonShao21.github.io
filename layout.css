@@ -321,7 +321,7 @@ p {
     margin-bottom: 15px;
 }
 
-.about-card .d-flex .w50-box ul li {
+.card-inner .d-flex .w50-box ul li {
     padding: 15px 0;
     width: 100%;
     text-align: right;
@@ -330,11 +330,11 @@ p {
     border-image-slice: 1; 
 }
 
-.about-card .d-flex .w50-box ul li:first-child {
+.card-inner .d-flex .w50-box ul li:first-child {
     padding-top: 4px;
 }
 
-.about-card .d-flex .w50-box ul li strong {
+.card-inner .d-flex .w50-box ul li strong {
     padding: 1px 8px;
     background: #78cc6d;
     color: #fff;
@@ -347,7 +347,7 @@ p {
 }
 
 
-.about-card .d-flex .word {
+.card-inner .d-flex .word {
     color: #fff;
     width: 60px;
     height: 60px;
@@ -361,7 +361,7 @@ p {
 }
 
 
-.about-card .d-flex .word-name {
+.card-inner .d-flex .word-name {
     font-size: 25px;
     font-weight: bolder;
     margin-bottom: 25px;
@@ -381,7 +381,8 @@ p {
     opacity: 0.5;
 }
 
-.card-inner .d-flex .w50-box figure{
+.card-inner .d-flex .w50-box figure,
+.card-inner .d-flex .w50-box p{
     padding-bottom:5px;
 }
 
@@ -511,8 +512,19 @@ p {
   }
 
 .card-inner .d-flex .content-box .gray {
-      background: #eee;
+    background: #eee;
   }
 
+.card-inner .d-flex .w50-box .email {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 36px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    background: #78cc6d;
+    color: #fff;
+    transition: .5s;
+}
 
-.card-inner 
